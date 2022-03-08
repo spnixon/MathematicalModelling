@@ -1,0 +1,9 @@
+Journal of the process between Steven Nixon and myself (Alex Antoun) 
+
+Tuesday, 8th of March:
+Started spitballing ideas of a research topic that we can model. Have come up with two potential 
+candidates one being a kaleidoscope and the other the exploration of how particles stick to
+surfaces based on the temperature. Both of us agreed to come up with an extra idea of the coming
+Thursday. In one week we'll try to come up with a very bare bones proof of concept to test
+our ability to pull this off
+
