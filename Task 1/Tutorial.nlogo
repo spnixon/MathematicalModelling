@@ -33,8 +33,9 @@ end
 to setupTurtles
   create-turtles numTurtles
   ask turtles [setxy random-xcor random-ycor]
-  ask turtles [ set energy 50]
-
+  ask turtles [set energy 50]
+  ask turtles [set shape "turtle"]
+  ask turtles [set size 2.5]
 end
 
 to regrow
@@ -132,7 +133,7 @@ numTurtles
 numTurtles
 0
 100
-53.0
+100.0
 1
 1
 NIL
@@ -158,7 +159,7 @@ regrowTime
 regrowTime
 0
 100
-54.0
+50.0
 1
 1
 NIL
