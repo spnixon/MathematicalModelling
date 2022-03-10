@@ -7,3 +7,10 @@ surfaces based on the temperature. Both of us agreed to come up with an extra id
 Thursday. In one week we'll try to come up with a very bare bones proof of concept to test
 our ability to pull this off
 
+Thursday, 10th of March: 
+	picked 3 ideas and will spend the weekend scrutinizing and coming up with a proof of 
+concept to see if we can actually pull of our ideas. First Idea is the stickyness of an ozone 
+particle based on the temperature of the atmosphere. Second idea is exploring famine of a nation 
+suffering heavy sanctions with few trading partners and not too much sunlight. Finally a forest
+fire simulation that we're keeping on the shelf for now as we know we coulb absolutely pull it off
+
