@@ -15,11 +15,11 @@ suffering heavy sanctions with few trading partners and not too much sunlight. F
 fire simulation that we're keeping on the shelf for now as we know we coulb absolutely pull it off
 
 Tuesday, 15th of March:
-
-	Decided to model why Ozone sensor readings appear to degrade with temperature. Some questions we
+	Decided to model why Ozone sensor readings appear to degrade with temperature.
 	Cheap sensor is S900 Aeroqual
 	Good sensor is 49C thermo environmental Ozone analyzer
-considered:
+
+	Some Questions we considered:
 	ASSUMPTION 1:
 	The good sensor (49C thermo environmental Ozone analyzer) can be concluded as such because...
 		There exists previous research comapring it to another similar quality sensor.
