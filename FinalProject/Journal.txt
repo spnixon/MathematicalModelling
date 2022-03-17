@@ -28,6 +28,13 @@ Tuesday, 15th of March:
 	Another assumption is that data degrades WITH temperature because of Ozone stickyness...
 		Must figure this one out
 
+Thursday, 17th of March:
+	Wrote an abstract, however we did not make an practical progress to constructing a model as of yet
+this means we will need to update the abstract as we move through. 
+
 Task for Alex: 
-	Find the experimental sensor comparisons and generate a P-score test. 
+	Split data into 1deg(C) temperature bins
+
+Task for Steve:
+	Formalize the argyument that the 49C is the more reliable and we can make the assunption that the S900 is the one prone to failure 
 
