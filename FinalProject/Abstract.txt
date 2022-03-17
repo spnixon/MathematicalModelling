@@ -1,0 +1,7 @@
+Steven is aware of a discrepency between two sensors that measure the adhesiveness of zone particles based on temperature, for the most part the
+two sensors agree. The problem arises at higher temperatures it was noted that the Purple Air Aeroqual-S900 had its ppbv 
+(parts per billion by volume which is the number of ozone particles per billion air particles)readings drop whereas the 49C read a greater ppbv.
+Steven and I are planning of modelling the drop of correlation between the readings as the temperature rises and during what times. This model will provide a
+industrial analysis and test of the S900.
+
+<Work in Progress>
