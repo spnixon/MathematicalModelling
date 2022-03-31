@@ -9,6 +9,10 @@ class sensReading:
         self.PAppbv = -9999
         self._49Cppbv = -9999
         self.next = None
+    
+    def printNode(self):
+        print(self.FDOY + ' ' + self.temp + ' ' + self.PAppbv + ' ' + self._49Cppbv)
+
 
 #class sortedLinkedList:
 #    def __init__(self):
