@@ -1,25 +1,33 @@
+from collections import deque
 import pandas as pd
 
 class sensReading:
     def __init__(self):
-        #-9999 used a sentinel value to flag error
+        #-999 used a sentinel value to flag error
         self.temp = -999
         self.FDOY= -999
         self.PAppbv= -999
         self._49Cppbv = -999 #This is the more accurate sensor
 
-def addItem(sensorData:list, newNode:sensReading):
-    endIndex = len(sensorData)
+    def print(self):
+        print('FDOY:',self.FDOY,'Temp:',self.temp,'PA (ppbv):',self.PAppbv,'49C (ppbv):',self._49Cppbv)
 
-    if endIndex == 0 or sensorData[endIndex-1].PAppbv < newNode.PAppbv:
+def addItem(sensorData:deque, newNode:sensReading):
+    if len(sensorData) != 0:
+        if sensorData[-1].PAppbv < newNode.PAppbv:
+            sensorData.append(newNode)
+        elif newNode.PAppbv < sensorData[0].PAppbv:
+            sensorData.appendleft(newNode)
+        else:
+            i = 0
+            while sensorData[i].PAppbv < newNode.PAppbv:
+                i += 1
+            sensorData.insert(i, newNode)
+    elif len(sensorData) == 0:
         sensorData.append(newNode)
-    else:
-        i = 0
-        while sensorData[i].PAppbv < newNode.PAppbv:
-            i += 1
-        sensorData.insert(i, newNode)
+    
 
-def sortBins(sensorData:list, start:int, end:int):
+def sortBins(sensorData:deque, start:int, end:int):
     for i in sensorData:
         if i.temp <= end and i.temp >= start:
             i.printNode(i)
@@ -27,53 +35,18 @@ def sortBins(sensorData:list, start:int, end:int):
             break
     
 df = pd.read_csv('TempBins_01.csv')
-sensorData = list()
+sensorData = deque()
 readData = list()
 sensorData.clear()
-for i in range (0, 5):
-    #print(i)
+for i in range (0, 1500):
+    print(i)
     readData = df.iloc[i]
-    #print(readData)
-    #print('working 1')
     newNode = sensReading()
     newNode.FDOY = readData[0]
     newNode._49Cppbv = readData[1]
-    #print('working 2')
     newNode.PAppbv = readData[2]
     newNode.temp = readData[3]
-    #print('working 3')
     addItem(sensorData, newNode)
-    #print('working 4')
 print("Done")
-
-
-             
-
-#print(df.head())
-
-
-#class sortedLinkedList:
-#    def __init__(self):
-#        self.head = None    
-    #May not be able to shove in an entire node into a list so keep this
-#    def addNode(self, newNode):
-#        current = self.head    
-#        if current is not None:
-#            if current.temp > newNode.temp:
-#               newNode.next = current
-#                self.head = newNode
-#            else:
-#                while current.next is not None:
-#                    if current.next.temp > newNode.temp:
-#                        break
-#                   current = current.next
-
-#                newNode.next = current.next
-#                current.next = newNode
-#            return 
-
-#        elif current is None:
-#            self.head = newNode
-#        return
-
-
+for x in range (0, 1500):
+    sensorData[x].print()
