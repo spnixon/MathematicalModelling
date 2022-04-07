@@ -38,3 +38,17 @@ Task for Alex:
 Task for Steve:
 	Formalize the argyument that the 49C is the more reliable and we can make the assunption that the S900 is the one prone to failure 
 
+Monday 21st of April, to Monday 28th of April : Spring Break
+
+Tuesday, 29th of April:
+Began to finalise the abstract for our research, and I had begun to program the sorting program. It 
+takes such a long time, its trying to read ~42,000 sensor reads.
+
+Thursday, 31st of April:
+Still programming the code in python. Decided to use a Deque in python and sort the queue as it reads
+data. Still pretty slow. By realising its slow because every read, the program loops through the existing
+list of data, I made it jump by 100's then by 10's until in hones in on the area where new data should
+be inserted
+
+Tuesday, 5th of May:
+Code is running much faster now and have managed to make it print data within a specified range
