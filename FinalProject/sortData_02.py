@@ -159,7 +159,10 @@ for i in range(0, len(sensorData)-1):
 print("Done")
 print(len(sensorData))
 
-print('Enter the plot range')
-start = int(input())
-end = int(input())
-scatterByTemp(sensorData, start, end)
+cont = 'c'
+while(cont != 'q' or cont != 'Q'):
+    print('Enter the plot range')
+    start = int(input())
+    end = int(input())
+    scatterByTemp(sensorData, start, end)
+    cont = (input('Press Q to quit'))
