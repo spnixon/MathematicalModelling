@@ -1,0 +1,9 @@
+Steven Nixon, Alex Antoun 
+
+Abstract 
+
+Accurate surface-level ozone monitoring is important for maintaining human health. 
+In previous research, a Thermo Environmental 49C ozone analyzer was used as a comparison standard to calibrate an Aeroqual S900 ozone sensor modified by PurpleAir (PA) in western Colorado. 
+When comparing ozone readings between these two ozone sensors, a significant drop in correlation and PA concentration is observed with increasing temperature. 
+The purpose of this project is to create a numerical temperature-dependent model generated from real data that mimics the PA sensor’s behavior. 
+In addition, other variables (relative humidity (RH), particulate matter (PM), adsorption, etcetera) will be tested for significance and potentially implemented in this model.   
