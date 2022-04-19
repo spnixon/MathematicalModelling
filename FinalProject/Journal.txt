@@ -54,4 +54,8 @@ Tuesday, 5th of April:
 Code is running much faster now and have managed to make it print data within a specified range
 
 Tuesday, 19th of April:
-Journal dates were fixed, and temperature-dependent adsorbtion models were researched. The python program can now output graphs with lines of best fits and slopes, while showing density of data points. Future tasks are to graph slope vs temperature and R^2 vs temperature to obtain a numerical equation that models how slope decreases with temperature. This will be compared to what an absorbtion model predicts. The overall goal is to determine what causes a drop in PA data with temperature, and possibly see if it can be modeled. SN
+Journal dates were fixed, and temperature-dependent adsorbtion models were researched. 
+The python program can now output graphs with lines of best fits and slopes, while showing density of data points. 
+Future tasks are to graph slope vs temperature and R^2 vs temperature to obtain a numerical equation that models how slope decreases with temperature. 
+This will be compared to what an absorbtion model predicts. 
+The overall goal is to determine what causes a drop in PA data with temperature, and possibly see if it can be modeled. SN
